@@ -24,19 +24,11 @@ public class Win {
     }
 
     public static boolean monoVertical(int[][] board, int column) {
-        for (int[] ints : board) {
-            if (ints[column] != 1) {
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][column] != 1) {
                 return false;
             }
         }
         return true;
-    }
-
-    public static int[] extractDiagonal(int[][] board) {
-        int[] rsl = new int[board.length];
-        for (int i = 0; i < board.length; i++) {
-            rsl[i] = board[i][i];
-        }
-        return rsl;
     }
 }
