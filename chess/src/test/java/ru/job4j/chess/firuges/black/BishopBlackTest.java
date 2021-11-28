@@ -28,7 +28,7 @@ public class BishopBlackTest {
     @Test
     public void way() {
         Figure bishopBlack = new BishopBlack(Cell.C1);
-        Cell[] expected = {Cell.D2,Cell.E3, Cell.F4, Cell.G5};
+        Cell[] expected = {Cell.D2, Cell.E3, Cell.F4, Cell.G5};
         Cell[] actual = bishopBlack.way(Cell.G5);
         Assert.assertArrayEquals(expected, actual);
     }
